@@ -72,6 +72,12 @@
     .footer-right { text-align: right; }
     .footer-copy { font-size: .8rem; color: var(--steel); margin-top: .2rem; }
 
+    
+    .service-hub { margin-top: 62px; padding: .55rem 2.5rem; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02); }
+    .service-hub-inner { max-width: 1180px; margin: 0 auto; display:flex; gap:1rem; flex-wrap:wrap; }
+    .service-hub a { font-family:'Barlow Condensed',sans-serif; font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--steel-light); text-decoration:none; }
+    .service-hub a:hover, .service-hub a.active { color: var(--green); }
+
     @media (max-width: 860px) {
       .nav-inner { grid-template-columns: 1fr auto; padding: .8rem 1.25rem; }
       .nav-links { display: none; }
@@ -88,14 +94,12 @@
       <a class="brand" href="../index.html" aria-label="Watchmen Solutions Home">
         <img class="brand-wordmark-img" src="../assets/watchmen-wordmark.png" alt="Watchmen Solutions">
       </a>
-      <div class="nav-links">
-        <a href="#what">Patrol Scope</a>
-        <a href="#documentation">Documentation</a>
-        <a href="#cta">Contact</a>
-      </div>
+      <div class="nav-links"><a href="../index.html#services">Services</a><a href="../index.html#why">Why Watchmen</a><a href="../index.html#contact">Contact</a></div>
       <a class="primary-btn" href="#cta">Request Assessment</a>
     </div>
   </nav>
+
+  <div class="service-hub"><div class="service-hub-inner"><a class="active" href="mobile-vehicle-patrols.html">Mobile Vehicle Patrols</a><a href="on-foot-patrols.html">On-Foot Patrols</a><a href="on-call-response.html">On-Call Response</a></div></div>
 
   <header class="hero">
     <div class="hero-photo" aria-hidden="true"></div>
@@ -171,6 +175,17 @@
       <div class="grid-2">
         <div class="card"><h3>Deterrence Through Presence</h3><p>Visible marked units change behavior without relying on confrontation-first tactics.</p></div>
         <div class="card"><h3>Confidence Through Consistency</h3><p>Predictable patrol coverage and professional interaction reinforce trust in site operations.</p></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section>
+    <div class="container">
+      <div class="section-tag">Related Services</div>
+      <div class="grid-2">
+        <div class="card"><h3><a href="mobile-vehicle-patrols.html" style="color:inherit;text-decoration:none;">Mobile Vehicle Patrols</a></h3><p>Visible exterior coverage for parking and perimeter operations.</p></div>
+        <div class="card"><h3><a href="on-foot-patrols.html" style="color:inherit;text-decoration:none;">On-Foot Patrols</a></h3><p>Interior and common-area presence where vehicle visibility is limited.</p></div>
       </div>
     </div>
   </section>
