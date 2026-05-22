@@ -337,6 +337,22 @@
       letter-spacing: 0.04em;
     }
 
+    .service-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--offwhite);
+      text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.82rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      padding-bottom: 0.1rem;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .service-link:hover { color: var(--green); border-color: var(--green); }
+
     .doc-callout {
       margin: 0 2.5rem;
       border: 1px solid rgba(157, 203, 59, 0.22);
@@ -537,11 +553,12 @@
       <div class="services-wrap">
         <article class="service-card">
           <div class="service-icon" aria-hidden="true">🚗</div>
-          <h3 class="service-title">Mobile Vehicle Patrols</h3>
+          <h3 class="service-title"><a href="services/mobile-vehicle-patrols.html" style="color:inherit;text-decoration:none;">Mobile Vehicle Patrols</a></h3>
           <p class="service-desc">Marked units run scheduled and randomized routes across parking areas and perimeter lanes at multifamily communities, hotels, parking facilities, and mixed commercial properties. Daily activity is documented each shift for clear coverage records and strong deterrence.</p>
           <div class="tag-row">
             <span class="pill">Marked Units</span><span class="pill">Scheduled + Random</span><span class="pill">Daily Activity Reports</span>
           </div>
+          <a class="service-link" href="services/mobile-vehicle-patrols.html">View Service →</a>
         </article>
         <article class="service-card">
           <div class="service-icon" aria-hidden="true">🦺</div>
