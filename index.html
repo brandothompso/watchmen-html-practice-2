@@ -53,7 +53,7 @@
       font-weight: 600;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--green);
+      color: #9DCB3B;
       margin-bottom: 0.75rem;
     }
 
@@ -189,31 +189,43 @@
       font-size: 0.8rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--green);
-      border: 1px solid rgba(157, 203, 59, 0.28);
+      color: #9DCB3B;
+      border: 1px solid rgba(157, 203, 59, 0.4);
+      background: rgba(157, 203, 59, 0.08);
       padding: 0.35rem 0.9rem;
       border-radius: 2px;
       margin-bottom: 1.5rem;
     }
 
-    .hero h1 { font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 800; line-height: 0.95; margin-bottom: 1.8rem; }
-    .hero h1 em { font-style: normal; color: var(--green); }
+    .hero h1 { font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 800; line-height: 0.95; margin-bottom: 1.8rem; color: #f5f7fa; }
+    .hero h1 em { font-style: normal; color: #9DCB3B; }
 
     .hero-sub {
       font-size: 1.1rem;
-      color: var(--steel-light);
+      color: rgba(255, 255, 255, 0.82);
       max-width: 540px;
       margin-bottom: 2.5rem;
     }
 
     .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
 
+    .hero .outline-btn {
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .hero .outline-btn:hover {
+      border-color: #9DCB3B;
+      color: #9DCB3B;
+    }
+
+
     .hero-stats {
       display: flex;
       gap: 3rem;
       margin-top: 4rem;
       padding-top: 2.5rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
       flex-wrap: wrap;
     }
 
@@ -221,10 +233,10 @@
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
       font-size: 2.2rem;
-      color: var(--green);
+      color: #9DCB3B;
     }
 
-    .stat-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--steel); }
+    .stat-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255, 255, 255, 0.60); }
 
     .approach-strip { background: var(--navy-light); padding: 1.1rem 2.5rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
     .approach-list { display: flex; max-width: 1200px; margin: 0 auto; }
@@ -435,7 +447,7 @@
     footer {
       background: #080f18;
       padding: 2rem 2.5rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .footer-inner {
