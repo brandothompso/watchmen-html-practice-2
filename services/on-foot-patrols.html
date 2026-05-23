@@ -28,7 +28,7 @@
 
     .site-nav { position: fixed; top: 0; z-index: 100; width: 100%; background: rgba(23, 32, 42, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
     .nav-inner { max-width: 1180px; margin: 0 auto; padding: .8rem 2.5rem; display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 1.2rem; }
-    .brand-wordmark-img { height: 28px; width: auto; object-fit: contain; display: block; }
+    .brand-eagle-img { height: 34px; width: 34px; object-fit: contain; display: block; }
     .nav-links { display: flex; gap: 1.2rem; }
     .nav-links a { font-size: .85rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--steel-light); text-decoration: none; transition: color .2s; }
     .nav-links a:hover { color: var(--green); }
@@ -52,7 +52,7 @@
     .bullet-list li { color: var(--steel-light); font-size: .93rem; display: flex; align-items: flex-start; gap: .55rem; }
     .bullet-list li::before { content: ""; width: 6px; height: 6px; margin-top: .52rem; border-radius: 50%; background: var(--green); flex: 0 0 6px; }
     .ops-image { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,.02); }
-    .ops-image img { width: 100%; display: block; object-fit: cover; filter: saturate(.88) brightness(.82); }
+    .ops-image img { width: 100%; display: block; object-fit: contain; object-position: center; max-height: 320px; background: rgba(255,255,255,.03); filter: saturate(.9) brightness(.88); }
     .ops-image + .ops-image { margin-top: .95rem; }
 
     .cta-box { border: 1px solid rgba(157,203,59,.22); border-radius: 8px; background: linear-gradient(135deg, rgba(35,72,111,.55), rgba(23,32,42,.45)); padding: 2rem; display: grid; grid-template-columns: 1fr auto; gap: 1.2rem; align-items: center; }
@@ -65,6 +65,7 @@
     .footer-values { font-size: .88rem; color: var(--offwhite); white-space: nowrap; text-align: center; }
     .footer-right { text-align: right; }
     .footer-copy { font-size: .8rem; color: var(--steel); margin-top: .2rem; }
+    .footer-logo { height: 18px; width: auto; display:block; margin-bottom: .4rem; opacity: .95; }
 
     
     .service-hub { margin-top: 62px; padding: .55rem 2.5rem; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02); }
@@ -86,7 +87,7 @@
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="../index.html" aria-label="Watchmen Solutions Home">
-        <img class="brand-wordmark-img" src="../assets/watchmen-wordmark.png" alt="Watchmen Solutions">
+        <img class="brand-eagle-img" src="../assets/watchmen-eagle.png" alt="Watchmen Solutions">
       </a>
       <div class="nav-links"><a href="../index.html#services">Services</a><a href="../index.html#why">Why Watchmen</a><a href="../index.html#contact">Contact</a></div>
       <a class="primary-btn" href="#cta">Request Assessment</a>
@@ -192,7 +193,8 @@
   <footer>
     <div class="footer-inner">
       <div>
-        <div class="footer-brand">WATCHMEN SOLUTIONS</div>
+        <img class="footer-logo" src="../assets/watchmen-wordmark.png" alt="Watchmen Solutions LLC">
+        <div class="footer-brand">WATCHMEN SOLUTIONS LLC</div>
         <div class="footer-sub">Charlotte, NC · Patrol Services</div>
       </div>
       <div class="footer-values">Accuracy · Integrity · Vigor</div>
