@@ -54,7 +54,7 @@
 
 ### 5) Broken/missing asset references on multiple Charlotte market pages
 - **Severity:** P1
-- **File path(s):** `markets/charlotte/apartment-security-patrols/index.html`, `markets/charlotte/hoa-community-patrols/index.html`, `markets/charlotte/retail-security-patrols/index.html`, `assets/`
+- **File path(s):** `markets/charlotte/apartment-security-patrols/index.html`, `markets/charlotte/hoa-community-patrols/index.html`, `markets/charlotte/retail-security-patrols/index.html`, `assets/charlotte-construction-security-patrol-suv.jpg`, `assets/watchmen-patrol-unit-multifamily.jpg`
 - **Issue:** Pages reference `assets/charlotte-security-team.jpg` for inline image + OG/Twitter image, but this file is not present in `assets/`.
 - **Why it matters:** Causes broken on-page images and social-preview image failures on affected pages.
 - **Recommended fix:** Add the missing asset or update image references to an existing image file across HTML and social meta tags.
@@ -89,7 +89,7 @@
 
 ### 10) Metadata quality is broadly present, but social images are not uniformly reliable
 - **Severity:** P2
-- **File path(s):** `index.html`, `services/*.html`, `industries/*.html`, `markets/**/*.html`, `why-watchmen.html`
+- **File path(s):** `index.html`, `services/index.html`, `services/mobile-vehicle-patrols.html`, `industries/index.html`, `industries/apartments.html`, `markets/index.html`, `markets/charlotte/index.html`, `markets/charlotte/retail-security-patrols/index.html`, `why-watchmen.html`
 - **Issue:** Pages generally include OG/Twitter tags, but referenced image reliability is inconsistent (notably missing `charlotte-security-team.jpg` on some market pages).
 - **Why it matters:** Social share previews may degrade for specific pages, weakening click-through and trust.
 - **Recommended fix:** Run a repo-wide social-image integrity check and enforce an image-exists validation in content QA.
