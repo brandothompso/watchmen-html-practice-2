@@ -420,16 +420,26 @@
     .contact-title em { font-style: normal; color: var(--green); }
     .contact-copy { color: var(--steel-light); margin-bottom: 1.6rem; }
 
-    .detail-row { display: flex; gap: 1rem; margin-bottom: 0.9rem; }
+    .detail-row {
+      display: grid;
+      grid-template-columns: 9.5rem minmax(0, 1fr);
+      column-gap: 1rem;
+      align-items: start;
+      margin-bottom: 0.9rem;
+    }
     .detail-label {
-      min-width: 80px;
       font-size: 1.35rem;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--green);
+      line-height: 1.1;
     }
-    .detail-value { font-size: 0.9rem; color: var(--steel-light); }
+    .detail-value {
+      font-size: 0.9rem;
+      color: var(--steel-light);
+      min-width: 0;
+    }
 
     .contact-form { display: grid; gap: 1rem; }
     .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -475,6 +485,7 @@
       .doc-callout { margin: 0 1.25rem; padding: 2rem 1.25rem; }
       .doc-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .detail-row { grid-template-columns: 1fr; row-gap: 0.35rem; }
       .ops-proof { margin: 1.5rem 1.25rem 0; padding: 1.1rem; }
       .ops-proof-grid, .ops-proof-images { grid-template-columns: 1fr; }
       .ops-proof-image img { height: 180px; }
