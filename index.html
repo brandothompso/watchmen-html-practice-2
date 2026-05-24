@@ -638,7 +638,7 @@
           <div class="detail-row"><div class="detail-label">Standard</div><div class="detail-value">Visible patrols · Disciplined response · GPS-Verified Daily Activity Reports</div></div>
           <div class="detail-row"><div class="detail-label">Training</div><div class="detail-value">Security Athlete® certified officers</div></div>
         </div>
-        <form class="contact-form" onsubmit="return false;">
+        <form class="contact-form">
           <div class="form-row-2">
             <input type="text" name="name" placeholder="Full Name" aria-label="Full Name" required>
             <input type="email" name="email" placeholder="Work Email" aria-label="Work Email" required>
@@ -675,10 +675,5 @@
     </div>
   </footer>
 
-  <script>
-    document.querySelector('.contact-form')?.addEventListener('submit', function (event) {
-      event.preventDefault();
-    });
-  </script>
 </body>
 </html>
