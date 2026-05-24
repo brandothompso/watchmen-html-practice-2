@@ -32,6 +32,7 @@
     </div>
   </nav>
 
+  <main id="main-content">
   <header class="hero">
     <img class="hero-eagle-accent" src="assets/watchmen-eagle.png" alt="" aria-hidden="true">
     <div class="hero-photo" aria-hidden="true"></div>
@@ -162,25 +163,49 @@
         </div>
         <form class="contact-form">
           <div class="form-row-2">
-            <input type="text" name="name" placeholder="Full Name" aria-label="Full Name" required>
-            <input type="email" name="email" placeholder="Work Email" aria-label="Work Email" required>
+            <div>
+              <label class="form-label" for="contact-name">Full Name</label>
+              <input id="contact-name" type="text" name="name" autocomplete="name" placeholder="Full Name" required>
+            </div>
+            <div>
+              <label class="form-label" for="contact-email">Work Email</label>
+              <input id="contact-email" type="email" name="email" autocomplete="email" placeholder="Work Email" required>
+            </div>
           </div>
-          <input type="text" name="company" placeholder="Company / Property" aria-label="Company / Property">
+          <label class="form-label" for="contact-company">Company / Property</label>
+          <input id="contact-company" type="text" name="company" autocomplete="organization" placeholder="Company / Property">
           <div class="form-row-2">
-            <select name="property_type" aria-label="Property Type">
-              <option>Multifamily</option><option>Hospitality</option><option>Parking Facility</option><option>Retail / Commercial</option><option>Office Park</option><option>Development Site</option><option>Other</option>
-            </select>
-            <select name="service_needed" aria-label="Service Needed">
-              <option>Mobile Vehicle Patrols</option><option>On-Foot Patrols</option><option>On-Call Response</option><option>Full Coverage Plan</option>
-            </select>
+            <div>
+              <label class="form-label" for="contact-property-type">Property Type</label>
+              <select id="contact-property-type" name="property_type">
+                <option>Multifamily</option>
+                <option>Hospitality</option>
+                <option>Parking Facility</option>
+                <option>Retail / Commercial</option>
+                <option>Office Park</option>
+                <option>Development Site</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label" for="contact-service-needed">Service Needed</label>
+              <select id="contact-service-needed" name="service_needed">
+                <option>Mobile Vehicle Patrols</option>
+                <option>On-Foot Patrols</option>
+                <option>On-Call Response</option>
+                <option>Full Coverage Plan</option>
+              </select>
+            </div>
           </div>
-          <textarea name="details" placeholder="Share patrol hours, recurring issues, and timeline…" aria-label="Coverage Details"></textarea>
+          <label class="form-label" for="contact-details">Coverage Details</label>
+          <textarea id="contact-details" name="details" placeholder="Share patrol hours, recurring issues, and timeline…"></textarea>
           <button class="primary-btn" type="submit">Send Request →</button>
           <p class="privacy-note">By submitting this form, you agree to be contacted by Watchmen Solutions regarding your patrol coverage inquiry.</p>
         </form>
       </div>
     </div>
   </section>
+  </main>
 
   <footer>
     <div class="footer-inner">

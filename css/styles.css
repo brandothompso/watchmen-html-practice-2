@@ -117,6 +117,14 @@
     }
 
     .outline-btn:hover { border-color: var(--green); color: var(--green); }
+    a:focus-visible,
+    button:focus-visible,
+    .primary-btn:focus-visible,
+    .outline-btn:focus-visible {
+      outline: 3px solid var(--green);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
 
     .site-nav {
       position: fixed;
@@ -483,6 +491,15 @@
 
     .contact-form { display: grid; gap: 1rem; }
     .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-label {
+      display: inline-block;
+      margin-bottom: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--steel-light);
+    }
 
     input, select, textarea {
       width: 100%;
