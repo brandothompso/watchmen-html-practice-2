@@ -980,3 +980,28 @@
   .industry-split { grid-template-columns: 1fr; }
   .industry-hero { min-height: 52vh; padding-top: 8rem; }
 }
+
+/* Local service-page utilities: reusable breadcrumb/process/stacked CTA patterns for market pages. */
+.breadcrumb-line {
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--steel);
+}
+.breadcrumb-line a { color: var(--steel-light); text-decoration: none; }
+.breadcrumb-line a:hover { color: var(--green); }
+.breadcrumb-line span { margin: 0 0.35rem; }
+
+.process-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.65rem;
+  color: var(--steel-light);
+}
+
+.cta-actions {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: start;
+}
