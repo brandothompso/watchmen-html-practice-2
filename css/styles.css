@@ -896,3 +896,86 @@
       .footer-values { white-space: normal; }
     }
   
+
+/* =========================
+   Industry page architecture
+   Reusable, restrained patterns for scalable vertical pages
+   ========================= */
+
+/* Hero variant: keeps existing hero DNA while allowing shorter inner pages. */
+.industry-hero {
+  min-height: 62vh;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+
+/* Reusable split section for challenge/proof pairings across industries. */
+.industry-split {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--grid-gap-lg);
+  align-items: start;
+}
+
+/* Operational proof block: subtle surface, quiet border, readable hierarchy. */
+.industry-proof-block {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  padding: clamp(1rem, 2vw, 1.5rem);
+}
+
+.industry-proof-block h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.25rem;
+  color: var(--offwhite);
+}
+
+/* Industry card grid used by hub page + related service modules. */
+.industry-card-grid {
+  margin-top: 1.35rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--grid-gap);
+}
+
+.industry-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.industry-card h2,
+.industry-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.55rem;
+}
+
+.industry-card a { color: var(--offwhite); text-decoration: none; }
+.industry-card a:hover { color: var(--green); }
+
+/* FAQ pattern: consistent spacing for scan-friendly operations content. */
+.faq-list {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.faq-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.45rem;
+}
+
+/* Responsive strategy: single-column conversion for all reusable modules. */
+@media (max-width: 900px) {
+  .industry-split { grid-template-columns: 1fr; }
+  .industry-hero { min-height: 52vh; padding-top: 8rem; }
+}
