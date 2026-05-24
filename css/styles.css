@@ -365,11 +365,11 @@
 
 
     .ops-proof {
-      margin: 2.2rem 2.5rem 0;
+      margin: 1.8rem 2.5rem 0;
       border: 1px solid var(--border);
       border-radius: 8px;
       background: rgba(255,255,255,0.02);
-      padding: 1.5rem;
+      padding: 1.2rem;
     }
 
     .ops-proof-grid {
@@ -377,16 +377,31 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1.05fr 0.95fr;
-      gap: 1.5rem;
-      align-items: center;
+      gap: 1.25rem;
+      align-items: stretch;
     }
 
     .ops-proof-copy p { color: var(--steel-light); max-width: 640px; }
     .ops-proof-copy .section-tag { margin-bottom: 0.5rem; }
     .ops-proof-title { font-size: 1.55rem; margin-bottom: 0.6rem; }
 
-    .ops-proof-image { border: 1px solid var(--border); border-radius: 6px; overflow: hidden; background: rgba(255,255,255,0.02); }
-    .ops-proof-image img { width: 100%; max-height: 340px; object-fit: cover; object-position: center; display: block; }
+    .ops-proof-image {
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.02);
+      min-height: 280px;
+      height: 100%;
+    }
+    .ops-proof-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
 
     .why-grid {
       margin-top: 3rem;
@@ -485,9 +500,10 @@
       .doc-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
       .detail-row { grid-template-columns: 1fr; row-gap: 0.35rem; }
-      .ops-proof { margin: 1.5rem 1.25rem 0; padding: 1.1rem; }
+      .ops-proof { margin: 1.5rem 1.25rem 0; padding: 1rem; }
       .ops-proof-grid { grid-template-columns: 1fr; }
-      .ops-proof-image img { max-height: 260px; }
+      .ops-proof-image { min-height: 260px; }
+      .ops-proof-image img { min-height: 260px; }
       .form-row-2 { grid-template-columns: 1fr; }
       .footer-inner { gap: 0.65rem; }
       .footer-values { white-space: normal; }
