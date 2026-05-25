@@ -398,9 +398,9 @@
     .doc-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; }
     .doc-title { font-size: clamp(2rem, 3.3vw, 2.7rem); font-weight: 800; margin-bottom: 0.8rem; }
     .doc-title em { font-style: normal; color: var(--green); }
-    .doc-sub { color: var(--steel-light); margin-bottom: 1.2rem; max-width: 760px; }
-    .doc-bullets { display: grid; gap: 0.5rem; }
-    .doc-bullets div { display: flex; align-items: center; gap: 0.55rem; font-size: 0.85rem; color: var(--steel-light); }
+    .doc-sub { color: var(--steel-light); margin-bottom: 1.2rem; max-width: 700px; }
+    .doc-bullets { display: grid; gap: 0.65rem; }
+    .doc-bullets div { display: flex; align-items: center; gap: 0.55rem; font-size: 0.85rem; line-height: 1.45; color: var(--steel-light); }
     .doc-bullets span { width: 6px; height: 6px; border-radius: 50%; background: var(--green); flex: 0 0 6px; }
 
 
@@ -466,7 +466,7 @@
 
     .contact-title { font-size: 2rem; font-weight: 800; line-height: 1; margin-bottom: 1rem; }
     .contact-title em { font-style: normal; color: var(--green); }
-    .contact-copy { color: var(--steel-light); margin-bottom: 1.6rem; }
+    .contact-copy { color: var(--steel-light); margin-bottom: 1.6rem; max-width: 62ch; }
 
     .detail-row {
       display: grid;
